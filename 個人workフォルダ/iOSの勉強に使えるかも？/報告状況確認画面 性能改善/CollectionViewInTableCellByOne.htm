@@ -1,0 +1,1239 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">\\2sysfs06\列車別旅客交通量(ノリホ)\002_2018年度追加改修\Documents(内部文書)\内部文書\99_個人\北林\更新ファイル\性能改善（報告状況確認画面）\Noriho\Noriho\View\CollectionViewInTableCellByOne.swift</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\KITABAYASHI_H\Desktop\NorihoSVN\trunk\Documents\20_製造\追加改修用\10_iPad\Noriho\Noriho\View\CollectionViewInTableCellByOne.swift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">import UIKit</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">import UIKit</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> 報告状況確認画面のカスタムセルクラス</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> 報告状況確認画面のカスタムセルクラス</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Date: 2017/11/16 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Date: 2017/11/16 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">class CollectionViewInTableViewCellByOne: UITableViewCell{</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">class CollectionViewInTableViewCellByOne: UITableViewCell{</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;//報告一覧ヘッダ部</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;//報告一覧ヘッダ部</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;let titlesArray = ["運転状況","報告列車","報告区間 / 列車名","上下別","両数","","ハ","ハザ","ハネ","ロ","ロザ","ロネ"]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;let titlesArray = ["運転状況","報告列車","報告区間 / 列車名","上下別","両数","","ハ","ハザ","ハネ","ロ","ロザ","ロネ"]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;//報告一覧データ部</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;//報告一覧データ部</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var labelsArray: [String]!</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var labelsArray: [String]!</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;@IBOutlet weak var collectionViewInTableCell: UICollectionView!</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func clearCell() {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func clearCell() {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if (labelsArray != nil) {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if (labelsArray != nil) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;labelsArray = nil</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;labelsArray = nil</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d2" href="#d2">.</a></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;func setCollectionViewDataSourceDelegate&lt;D: UICollectionViewDataSource &amp; UICollectionViewDelegate&gt;</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;(dataSourceDelegate: D, forRow row: Int) {</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;collectionViewInTableCell.dataSource = dataSourceDelegate</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;collectionViewInTableCell.delegate = dataSourceDelegate</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;collectionViewInTableCell.reloadData()</span></code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> DataSourceの拡張メソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> DataSourceの拡張メソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Date: 2017/11/16 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Date: 2017/11/16 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">extension CollectionViewInTableViewCellByOne: UICollectionViewDataSource {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">extension CollectionViewInTableViewCellByOne: UICollectionViewDataSource {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; セル数を返却するメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; セル数を返却するメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/11/16 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/11/16 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: セル数を返却する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: セル数を返却する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - collectionView: 対象の表の情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - collectionView: 対象の表の情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - section: 表のセクション番号</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - section: 表のセクション番号</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: セル数</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: セル数</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return Constants.ReportStatusConstants.reportStatusCellNumber</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return Constants.ReportStatusConstants.reportStatusCellNumber</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; セルを作成するメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; セルを作成するメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/11/16 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/11/16 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 報告入力一覧表の1行分のセルを作成する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 報告入力一覧表の1行分のセルを作成する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - collectionView: 対象のテーブル行の情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - collectionView: 対象のテーブル行の情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - indexPath: 対象のテーブル行のセクション、セル番号の情報を保持するリスト</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - indexPath: 対象のテーブル行のセクション、セル番号の情報を保持するリスト</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: コレクションセル</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: コレクションセル</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;//セルのスクロールを不可に設定。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;//セルのスクロールを不可に設定。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;collectionView.isScrollEnabled = false</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;collectionView.isScrollEnabled = false</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;//セルの初期化</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;//セルの初期化</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;switch indexPath.row {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;switch indexPath.row {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 0..&lt;(titlesArray.count):</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 0..&lt;(titlesArray.count):</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.labelCell,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.labelCell,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor(colorLiteralRed: 193/255, green: 234/255, blue: 229/255, alpha: 1)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor(colorLiteralRed: 193/255, green: 234/255, blue: 229/255, alpha: 1)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = titlesArray[indexPath.row]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = titlesArray[indexPath.row]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 12:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 12:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var cell = UICollectionViewCell.init()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;var cell = UICollectionViewCell.init()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//報告/未報告セルの設定。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//報告/未報告セルの設定。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(labelsArray[0] == Constants.CommonConstants.nonReport) {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(labelsArray[0] == Constants.CommonConstants.nonReport) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//未報告時のセルをオレンジで設定。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//未報告時のセルをオレンジで設定。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.reportCell, for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.reportCell, for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let view = cell.contentView.viewWithTag(2)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let view = cell.contentView.viewWithTag(2)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.textColor = UIColor.orange</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.textColor = UIColor.orange</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;view?.layer.borderColor = UIColor.orange.cgColor</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;view?.layer.borderColor = UIColor.orange.cgColor</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 表示ラベル: 未報告</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 表示ラベル: 未報告</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = Constants.ReportStatusConstants.nonReportLabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = Constants.ReportStatusConstants.nonReportLabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;} else {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//未報告以外は空白セルとする。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//未報告以外は空白セルとする。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.spaceCell,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.spaceCell,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = ""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = ""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 13:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 13:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.doubleCell,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.doubleCell,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの上部ラベル(列車番号)を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの上部ラベル(列車番号)を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let aboveLabel = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let aboveLabel = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上部ラベルを設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上部ラベルを設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[1]: 列車番号</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[1]: 列車番号</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.text = labelsArray[1]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.text = labelsArray[1]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの下部ラベル（列車番号補助）を設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの下部ラベル（列車番号補助）を設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let belowLabel = cell.contentView.viewWithTag(2) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let belowLabel = cell.contentView.viewWithTag(2) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 下部ラベルを設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 下部ラベルを設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[2]: 列車番号補助</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[2]: 列車番号補助</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.text = labelsArray[2]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.text = labelsArray[2]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 14:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 14:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.doubleCell,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.doubleCell,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの上部ラベル(列車番号)を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの上部ラベル(列車番号)を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let aboveLabel = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let aboveLabel = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上部ラベルを設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上部ラベルを設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[3]: 始駅〜終駅</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[3]: 始駅〜終駅</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.text = labelsArray[3]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.text = labelsArray[3]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの下部ラベル（列車番号補助）を設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの下部ラベル（列車番号補助）を設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let belowLabel = cell.contentView.viewWithTag(2) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let belowLabel = cell.contentView.viewWithTag(2) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.font = UIFont.boldSystemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 下部ラベルを設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 下部ラベルを設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[4]: 列車名</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[4]: 列車名</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.text = labelsArray[4]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.text = labelsArray[4]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 15:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 15:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.labelCell,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.labelCell,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[5]: 上下別</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[5]: 上下別</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;switch labelsArray[5] {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;switch labelsArray[5] {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case Constants.CommonConstants.up:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case Constants.CommonConstants.up:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上下別が"U"(上り)の場合、上りを表示する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上下別が"U"(上り)の場合、上りを表示する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = Constants.PassengerReportConstants.upLabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = Constants.PassengerReportConstants.upLabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case Constants.CommonConstants.down:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;case Constants.CommonConstants.down:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上下別が"D"(下り)の場合、下りを表示する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上下別が"D"(下り)の場合、下りを表示する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = Constants.PassengerReportConstants.downLabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = Constants.PassengerReportConstants.downLabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;default:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;default:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上下別がU,D以外のものは存在しないため、処理は記述しない</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上下別がU,D以外のものは存在しないため、処理は記述しない</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;break</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 16:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 16:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.labelCell,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.labelCell,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let label = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[6]: 両数</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[6]: 両数</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = labelsArray[6]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;label.text = labelsArray[6]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 17:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 17:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.doubleCell,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.doubleCell,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 2分割したセルの上部ラベル(定員)を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 2分割したセルの上部ラベル(定員)を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let aboveLabel = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let aboveLabel = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// ラベル: 定員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// ラベル: 定員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.text = Constants.CommonConstants.capacity</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.text = Constants.CommonConstants.capacity</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの下部ラベル（乗員）を設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの下部ラベル（乗員）を設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let belowLabel = cell.contentView.viewWithTag(2) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let belowLabel = cell.contentView.viewWithTag(2) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// ラベル:乗員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// ラベル:乗員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.text = Constants.CommonConstants.crew</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.text = Constants.CommonConstants.crew</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;default:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;default:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.doubleCell,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.ReportStatusConstants.doubleCell,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for: indexPath)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;cell.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 2分割したセルの上部ラベル(各定員数)を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 2分割したセルの上部ラベル(各定員数)を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let aboveLabel = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let aboveLabel = cell.contentView.viewWithTag(1) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上部ラベルを設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 上部ラベルを設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[7]: ハ定員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[7]: ハ定員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[8]: ハザ定員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[8]: ハザ定員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[9]: ハネ定員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[9]: ハネ定員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[10]: ロ定員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[10]: ロ定員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[11]: ロザ定員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[11]: ロザ定員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[12]: ロネ定員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[12]: ロネ定員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.text = labelsArray[indexPath.row - 11]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;aboveLabel.text = labelsArray[indexPath.row - 11]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの下部ラベル（各乗員数）を設定する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;//2分割したセルの下部ラベル（各乗員数）を設定する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let belowLabel = cell.contentView.viewWithTag(2) as! UILabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let belowLabel = cell.contentView.viewWithTag(2) as! UILabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.textColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.textColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.font = UIFont.systemFont(ofSize: 16)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[13]: ハ乗員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[13]: ハ乗員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[14]: ハザ乗員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[14]: ハザ乗員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[15]: ハネ乗員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[15]: ハネ乗員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[16]: ロ乗員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[16]: ロ乗員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[17]: ロザ乗員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[17]: ロザ乗員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[18]: ロネ乗員</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// labelsArray[18]: ロネ乗員</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.text = labelsArray[indexPath.row - 5]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;belowLabel.text = labelsArray[indexPath.row - 5]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return cell</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> DelegadeFlowLayoutの拡張メソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> DelegadeFlowLayoutの拡張メソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Date: 2017/11/16 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Date: 2017/11/16 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">extension CollectionViewInTableViewCellByOne: UICollectionViewDelegateFlowLayout {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">extension CollectionViewInTableViewCellByOne: UICollectionViewDelegateFlowLayout {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; セルの大きさを設定するメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; セルの大きさを設定するメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: セルの大きさを調整する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: セルの大きさを調整する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - collectionView: 対象のテーブル行の情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - collectionView: 対象のテーブル行の情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - collectionViewLayout: セルのレイアウト情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - collectionViewLayout: セルのレイアウト情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - indexPath: 対象のテーブル行のセクション、セル番号の情報を保持するリスト</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - indexPath: 対象のテーブル行のセクション、セル番号の情報を保持するリスト</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: コレクションセルサイズ</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: コレクションセルサイズ</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;open func collectionView(_ collectionView: UICollectionView,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;open func collectionView(_ collectionView: UICollectionView,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layout collectionViewLayout: UICollectionViewLayout,</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; layout collectionViewLayout: UICollectionViewLayout,</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sizeForItemAt indexPath : IndexPath) -&gt; CGSize {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sizeForItemAt indexPath : IndexPath) -&gt; CGSize {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;switch(indexPath.row) {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;switch(indexPath.row) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 4...11:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 4...11:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 44, height: 25)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 44, height: 25)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 16...23:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 16...23:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 44, height: 50)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 44, height: 50)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 0, 1:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 0, 1:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 72, height: 25)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 72, height: 25)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 2:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 2:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 210, height: 25)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 210, height: 25)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 3:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 3:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 56, height: 25)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 56, height: 25)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 12, 13:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 12, 13:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 72, height:50)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 72, height:50)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 14:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 14:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 210, height: 50)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 210, height: 50)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 15:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;case 15:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 56, height: 50)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 56, height: 50)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;default:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;default:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 49, height: 50)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return CGSize(width: 49, height: 50)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

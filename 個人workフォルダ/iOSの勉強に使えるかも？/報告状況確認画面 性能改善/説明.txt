@@ -1,0 +1,8 @@
+【報告状況確認画面】性能を改善する…
+①storyboardの報告状況確認画面 scrollViewを削除する（子ViewはscrollViewと同じ階層に持ってくる）
+②レイアウトを適当に設定する＋テーブルのスクロールをONにする。
+③storyboardのtableCellを、CollectionViewInTableCellByOneに紐づける。
+④CollectionViewInTableCellByOneにdatasourceとかを定義する。
+⑤DayReportViewControllerByOneをいい感じに設定する
+
+以上！

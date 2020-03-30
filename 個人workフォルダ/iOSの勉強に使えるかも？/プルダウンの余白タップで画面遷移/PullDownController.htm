@@ -1,0 +1,1051 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WinMerge File Compare Report</title>
+<style type="text/css">
+<!--
+td,th {word-break: break-all; font-size: 12pt;}
+tr { vertical-align: top; }
+.border { border-radius: 6px; border: 1px #a0a0a0 solid; box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15); overflow: hidden; }
+.ln {text-align: right; word-break: normal; background-color: lightgrey; box-shadow: inset 1px 0px 0px rgba(0, 0, 0, 0.10);}
+.title {color: white; background-color: blue; vertical-align: top; padding: 4px 4px; background: linear-gradient(mediumblue, darkblue);}
+.sf3b2 {color: #000000; background-color: #ffffff; }
+.sf3b5 {color: #000000; background-color: #0078d7; }
+.sf3b14 {color: #000000; background-color: #ffa0a0; }
+.sf3b16 {color: #000000; background-color: #f1e2ad; }
+.sf3b18 {color: #000000; background-color: #ffaa82; }
+.sf3b19 {color: #000000; background-color: #c8816c; }
+.sf6b2 {color: #ffffff; background-color: #ffffff; }
+.sf6b5 {color: #ffffff; background-color: #0078d7; }
+.sf6b14 {color: #ffffff; background-color: #ffa0a0; }
+.sf6b16 {color: #ffffff; background-color: #f1e2ad; }
+.sf6b18 {color: #ffffff; background-color: #ffaa82; }
+.sf6b19 {color: #ffffff; background-color: #c8816c; }
+.sf7b2 {color: #0000ff; background-color: #ffffff; font-weight: bold; }
+.sf7b5 {color: #0000ff; background-color: #0078d7; font-weight: bold; }
+.sf7b14 {color: #0000ff; background-color: #ffa0a0; font-weight: bold; }
+.sf7b16 {color: #0000ff; background-color: #f1e2ad; font-weight: bold; }
+.sf7b18 {color: #0000ff; background-color: #ffaa82; font-weight: bold; }
+.sf7b19 {color: #0000ff; background-color: #c8816c; font-weight: bold; }
+.sf8b2 {color: #800080; background-color: #ffffff; }
+.sf8b5 {color: #800080; background-color: #0078d7; }
+.sf8b14 {color: #800080; background-color: #ffa0a0; }
+.sf8b16 {color: #800080; background-color: #f1e2ad; }
+.sf8b18 {color: #800080; background-color: #ffaa82; }
+.sf8b19 {color: #800080; background-color: #c8816c; }
+.sf9b2 {color: #008000; background-color: #ffffff; }
+.sf9b5 {color: #008000; background-color: #0078d7; }
+.sf9b14 {color: #008000; background-color: #ffa0a0; }
+.sf9b16 {color: #008000; background-color: #f1e2ad; }
+.sf9b18 {color: #008000; background-color: #ffaa82; }
+.sf9b19 {color: #008000; background-color: #c8816c; }
+.sf10b2 {color: #ff0000; background-color: #ffffff; }
+.sf10b5 {color: #ff0000; background-color: #0078d7; }
+.sf10b14 {color: #ff0000; background-color: #ffa0a0; }
+.sf10b16 {color: #ff0000; background-color: #f1e2ad; }
+.sf10b18 {color: #ff0000; background-color: #ffaa82; }
+.sf10b19 {color: #ff0000; background-color: #c8816c; }
+.sf11b2 {color: #606060; background-color: #ffffff; }
+.sf11b5 {color: #606060; background-color: #0078d7; }
+.sf11b14 {color: #606060; background-color: #ffa0a0; }
+.sf11b16 {color: #606060; background-color: #f1e2ad; }
+.sf11b18 {color: #606060; background-color: #ffaa82; }
+.sf11b19 {color: #606060; background-color: #c8816c; }
+.sf12b2 {color: #800000; background-color: #ffffff; }
+.sf12b5 {color: #800000; background-color: #0078d7; }
+.sf12b14 {color: #800000; background-color: #ffa0a0; }
+.sf12b16 {color: #800000; background-color: #f1e2ad; }
+.sf12b18 {color: #800000; background-color: #ffaa82; }
+.sf12b19 {color: #800000; background-color: #c8816c; }
+.sf13b2 {color: #0080c0; background-color: #ffffff; }
+.sf13b5 {color: #0080c0; background-color: #0078d7; }
+.sf13b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf13b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf13b18 {color: #0080c0; background-color: #ffaa82; }
+.sf13b19 {color: #0080c0; background-color: #c8816c; }
+.sf15b2 {color: #000000; background-color: #ffffff; }
+.sf15b5 {color: #000000; background-color: #0078d7; }
+.sf15b14 {color: #000000; background-color: #ffa0a0; }
+.sf15b16 {color: #000000; background-color: #f1e2ad; }
+.sf15b18 {color: #000000; background-color: #ffaa82; }
+.sf15b19 {color: #000000; background-color: #c8816c; }
+.sf17b2 {color: #000000; background-color: #ffffff; }
+.sf17b5 {color: #000000; background-color: #0078d7; }
+.sf17b14 {color: #000000; background-color: #ffa0a0; }
+.sf17b16 {color: #000000; background-color: #f1e2ad; }
+.sf17b18 {color: #000000; background-color: #ffaa82; }
+.sf17b19 {color: #000000; background-color: #c8816c; }
+.sf20b2 {color: #000080; background-color: #ffffff; }
+.sf20b5 {color: #000080; background-color: #0078d7; }
+.sf20b14 {color: #000080; background-color: #ffa0a0; }
+.sf20b16 {color: #000080; background-color: #f1e2ad; }
+.sf20b18 {color: #000080; background-color: #ffaa82; }
+.sf20b19 {color: #000080; background-color: #c8816c; }
+.sf21b2 {color: #0080c0; background-color: #ffffff; }
+.sf21b5 {color: #0080c0; background-color: #0078d7; }
+.sf21b14 {color: #0080c0; background-color: #ffa0a0; }
+.sf21b16 {color: #0080c0; background-color: #f1e2ad; }
+.sf21b18 {color: #0080c0; background-color: #ffaa82; }
+.sf21b19 {color: #0080c0; background-color: #c8816c; }
+-->
+</style>
+</head>
+<body>
+<div class="border"><table cellspacing="0" cellpadding="0" style="width: 100%; margin: 0; border: none;">
+<thead>
+<tr>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">C:\Users\KITABAYASHI_H\Desktop\NorihoSVN\branches\開発中ソース\Noriho\Noriho\ViewController\PullDownController.swift</th>
+<th class="title" style="width:1%"></th><th class="title" style="width:49.000000%">\\2sysfs06\列車別旅客交通量(ノリホ)\002_2018年度追加改修\Documents(内部文書)\内部文書\99_個人\北林\更新ファイル\プルダウンどこ押しても閉じるー\PullDownController.swift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">import UIKit</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">import UIKit</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">　プルダウンドラム表示用のViewControllerクラス</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">　プルダウンドラム表示用のViewControllerクラス</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">class PullDownController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">class PullDownController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// プルダウンを閉じる際に呼び出し元に通知するためのハンドラ</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// プルダウンを閉じる際に呼び出し元に通知するためのハンドラ</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var resultHandler: ((Void) -&gt; Void)?</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var resultHandler: ((Void) -&gt; Void)?</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// 列車番号情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// 列車番号情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var trainNoDataArray: [PullDownDataEntity]?</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var trainNoDataArray: [PullDownDataEntity]?</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// プルダウンの設定番号</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// プルダウンの設定番号</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var pulldownTempVal = 0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var pulldownTempVal = 0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// プルダウンドラム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// プルダウンドラム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;@IBOutlet weak var picker: UIPickerView!</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;@IBOutlet weak var picker: UIPickerView!</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// 手入力プルダウンとそれ以外のプルダウンを分類するためのフラグ</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// 手入力プルダウンとそれ以外のプルダウンを分類するためのフラグ</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var pullDownTypeFlag: Int?</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;var pullDownTypeFlag: Int?</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// グローバル変数(一時情報)呼び出し変数</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// グローバル変数(一時情報)呼び出し変数</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;let shareApp = UIApplication.shared.delegate as! AppDelegate</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;let shareApp = UIApplication.shared.delegate as! AppDelegate</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; 画面表示前に行う処理を定義したメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; 画面表示前に行う処理を定義したメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2018/3/12 17情鉄第1017号　乗務員タブレットによる乗員報告用アプリの追加機能開発</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2018/3/12 17情鉄第1017号　乗務員タブレットによる乗員報告用アプリの追加機能開発</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 一時データの取得、ドラムの設定、ボタンの設定を行う。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 一時データの取得、ドラムの設定、ボタンの設定を行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;override func viewDidLoad() {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;override func viewDidLoad() {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;super.viewDidLoad()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;super.viewDidLoad()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 画面上部ツールバーの各種設定を行う。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 画面上部ツールバーの各種設定を行う。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let statusBar = UIView(frame:CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.size.width, height: 20.0))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let statusBar = UIView(frame:CGRect(x: 0.0, y: 0.0, width: UIScreen.main.bounds.size.width, height: 20.0))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;statusBar.backgroundColor = UIColor.black</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;statusBar.backgroundColor = UIColor.black</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;view.addSubview(statusBar)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;view.addSubview(statusBar)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.delegate = self</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.delegate = self</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.dataSource = self</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.dataSource = self</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 初期選択項目の番号を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 初期選択項目の番号を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.selectRow(pulldownTempVal, inComponent: 0, animated: false)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.selectRow(pulldownTempVal, inComponent: 0, animated: false)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号一時情報を初期化する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号一時情報を初期化する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNo = ""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNo = ""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号補助一時情報を初期化する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号補助一時情報を初期化する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNoHojo = ""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNoHojo = ""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車名漢字一時情報を初期化する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車名漢字一時情報を初期化する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainKanjiName = ""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainKanjiName = ""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if(pullDownTypeFlag == 0) {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if(pullDownTypeFlag == 0) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 画面遷移パラメータである列車番号を初期化する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 画面遷移パラメータである列車番号を初期化する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.screenTransitionParameter.trainNo = ""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.screenTransitionParameter.trainNo = ""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 画面遷移パラメータである列車番号補助を初期化する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 画面遷移パラメータである列車番号補助を初期化する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.screenTransitionParameter.trainNoHojo = ""</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.screenTransitionParameter.trainNoHojo = ""</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// プルダウンのレイアウトを設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// プルダウンのレイアウトを設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.layer.borderColor = UIColor.clear.cgColor</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.layer.borderColor = UIColor.clear.cgColor</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.layer.borderWidth = 0.5</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.layer.borderWidth = 0.5</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.layer.cornerRadius = 20.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;picker.layer.cornerRadius = 20.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 『選択』ボタンのレイアウトを設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 『選択』ボタンのレイアウトを設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let button = UIButton(frame: CGRect(x: 284, y: 600, width: 200, height: 80))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let button = UIButton(frame: CGRect(x: 284, y: 600, width: 200, height: 80))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.layer.cornerRadius = 40</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.layer.cornerRadius = 40</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.backgroundColor = UIColor(colorLiteralRed: 9/255, green: 185/255, blue: 180/255, alpha: 1)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.backgroundColor = UIColor(colorLiteralRed: 9/255, green: 185/255, blue: 180/255, alpha: 1)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.setTitle("選択", for: UIControlState.normal)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.setTitle("選択", for: UIControlState.normal)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.titleLabel?.font = UIFont.systemFont(ofSize: 50)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.titleLabel?.font = UIFont.systemFont(ofSize: 50)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.setTitleColor(UIColor.white, for: UIControlState.normal)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.setTitleColor(UIColor.white, for: UIControlState.normal)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.tag = 1</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.tag = 1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.addTarget(self, action: #selector(self.touchButton(_:)), for: .touchDown)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;button.addTarget(self, action: #selector(self.touchButton(_:)), for: .touchDown)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;self.view.addSubview(button)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;self.view.addSubview(button)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;self.view.layer.borderWidth = 5</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;self.view.layer.borderWidth = 5</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;self.view.layer.borderColor = UIColor.black.cgColor</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;self.view.layer.borderColor = UIColor.black.cgColor</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; ドラムの列数を定義したメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; ドラムの列数を定義したメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 列数を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 列数を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameter pickerView: ドラムの情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameter pickerView: ドラムの情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: 列数</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: 列数</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func numberOfComponents(in pickerView: UIPickerView) -&gt; Int {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func numberOfComponents(in pickerView: UIPickerView) -&gt; Int {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// ドラムの列数を1に設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;// ドラムの列数を1に設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return 1</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return 1</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; ドラムの各項目の高さを定義したメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; ドラムの各項目の高さを定義したメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 行の高さを設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 行の高さを設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - pickerView: ドラムの情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - pickerView: ドラムの情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - compornent: 行の高さに関する情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - compornent: 行の高さに関する情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: 行の高さ</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: 行の高さ</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -&gt; CGFloat {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -&gt; CGFloat {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// ドラムの1行の高さを設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// ドラムの1行の高さを設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return 120</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return 120</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; ドラムの項目数を定義したメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; ドラムの項目数を定義したメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 項目数を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 項目数を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters: </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters: </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- pickerView: ドラムの情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- pickerView: ドラムの情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- compornent: 行に関する情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- compornent: 行に関する情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: 行数</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: 行数</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -&gt; Int {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -&gt; Int {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// ドラムに設定する項目数を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// ドラムに設定する項目数を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return trainNoDataArray!.count</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return trainNoDataArray!.count</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; ドラムの項目内容を定義したメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; ドラムの項目内容を定義したメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 項目を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 項目を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters:</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters:</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- pickerView: ドラムの情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- pickerView: ドラムの情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- row: 行に関する情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- row: 行に関する情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- compornent:選択されている行に関する情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- compornent:選択されている行に関する情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: ラベル</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Returns: ラベル</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -&gt; UIView {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -&gt; UIView {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// ラベルの設定</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// ラベルの設定</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let pickerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 640, height: 120))</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let pickerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 640, height: 120))</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;pickerLabel.backgroundColor = UIColor.white</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;pickerLabel.backgroundColor = UIColor.white</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 選択中の項目</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 選択中の項目</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var selectText: String!</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var selectText: String!</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 表示テキストの内容を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 表示テキストの内容を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let willDisplayTrainNoData = trainNoDataArray![row]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let willDisplayTrainNoData = trainNoDataArray![row]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;pickerLabel.text = willDisplayTrainNoData.trainNo + "　" + willDisplayTrainNoData.trainNoHojo + "　" + willDisplayTrainNoData.trainKanjiName</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;pickerLabel.text = willDisplayTrainNoData.trainNo + "　" + willDisplayTrainNoData.trainNoHojo + "　" + willDisplayTrainNoData.trainKanjiName</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// フォントサイズを設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// フォントサイズを設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;pickerLabel.font = UIFont.systemFont(ofSize: 32)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;pickerLabel.font = UIFont.systemFont(ofSize: 32)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 初期選択内容を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 初期選択内容を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let displayedTrainNoData = trainNoDataArray![pulldownTempVal]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;let displayedTrainNoData = trainNoDataArray![pulldownTempVal]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;selectText = displayedTrainNoData.trainNo + "　" + displayedTrainNoData.trainNoHojo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;selectText = displayedTrainNoData.trainNo + "　" + displayedTrainNoData.trainNoHojo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号一時情報を保存する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号一時情報を保存する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNo = displayedTrainNoData.trainNo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNo = displayedTrainNoData.trainNo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号補助一時情報を保存する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号補助一時情報を保存する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNoHojo = displayedTrainNoData.trainNoHojo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNoHojo = displayedTrainNoData.trainNoHojo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車名漢字一時情報を保持する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車名漢字一時情報を保持する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainKanjiName = displayedTrainNoData.trainKanjiName</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainKanjiName = displayedTrainNoData.trainKanjiName</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 選択されたテキストを元の画面に反映する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 選択されたテキストを元の画面に反映する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.textField.text = selectText</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;shareApp.textField.text = selectText</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; </span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return pickerLabel</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;return pickerLabel</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; 選択された列車番号、列車番号補助を保持するためのメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; 選択された列車番号、列車番号補助を保持するためのメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 止まったタイミングでの項目を保持する</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 止まったタイミングでの項目を保持する</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters: </span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameters: </span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- pickerView: ドラムの情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- pickerView: ドラムの情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- row: 行番号</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- row: 行番号</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- compornent: 選択されている行に関する情報</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;- compornent: 選択されている行に関する情報</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;//現在の列番号を保存。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;//現在の列番号を保存。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;pulldownTempVal = row</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;pulldownTempVal = row</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 選択中の項目</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 選択中の項目</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var selectText: String!</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;var selectText: String!</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号プルダウンに設定する列車番号が1件以上存在する場合</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号プルダウンに設定する列車番号が1件以上存在する場合</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if (trainNoDataArray?.count != 0) {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if (trainNoDataArray?.count != 0) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 選択されたテキストを保存する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 選択されたテキストを保存する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let selectedTrainNoData = trainNoDataArray![pulldownTempVal]</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;let selectedTrainNoData = trainNoDataArray![pulldownTempVal]</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 選択中の項目内容を更新する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 選択中の項目内容を更新する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;selectText = selectedTrainNoData.trainNo + "　" + selectedTrainNoData.trainNoHojo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;selectText = selectedTrainNoData.trainNo + "　" + selectedTrainNoData.trainNoHojo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号一時情報を保存する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号一時情報を保存する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNo = selectedTrainNoData.trainNo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNo = selectedTrainNoData.trainNo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号補助一時情報を保存する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 列車番号補助一時情報を保存する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNoHojo = selectedTrainNoData.trainNoHojo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainNoHojo = selectedTrainNoData.trainNoHojo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 列車名漢字一時情報を保持する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 列車名漢字一時情報を保持する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainKanjiName = selectedTrainNoData.trainKanjiName</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.trainKanjiName = selectedTrainNoData.trainKanjiName</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(pullDownTypeFlag == 0) {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if(pullDownTypeFlag == 0) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 画面遷移パラメータである列車番号を保存する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 画面遷移パラメータである列車番号を保存する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.screenTransitionParameter.trainNo = selectedTrainNoData.trainNo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.screenTransitionParameter.trainNo = selectedTrainNoData.trainNo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 画面遷移パラメータである列車番号補助を保存する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 画面遷移パラメータである列車番号補助を保存する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.screenTransitionParameter.trainNoHojo = selectedTrainNoData.trainNoHojo</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.screenTransitionParameter.trainNoHojo = selectedTrainNoData.trainNoHojo</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 選択されたテキストを元の画面に反映する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;// 選択されたテキストを元の画面に反映する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.textField.text = selectText</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;shareApp.textField.text = selectText</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"><a name="d1" href="#d1">.</a></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;override func touchesBegan(_ touches: Set&lt;UITouch&gt;, with event: UIEvent?) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;// 選択ボタン押下により呼び出し元に戻る</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;if let handler = self.resultHandler {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;handler()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp; &nbsp; &nbsp;self.dismiss(animated: true, completion: nil)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td style="color: #000000; background-color: #c0c0c0; "><code>&nbsp;</code></td>
+<td class="ln"></td><td style="color: #000000; background-color: #efcb05; "><code><span style="color: #000000; background-color: #efcb05; "> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;/**</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; 選択ボタン押下時の処理を定義したメソッド</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; 選択ボタン押下時の処理を定義したメソッド</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Author: SCC北林</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Copyright: 株式会社JR東日本情報システム</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Date: 2017/9/20 新規作成</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 選択ボタン押下時の動作を設定する。</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Remark: 選択ボタン押下時の動作を設定する。</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Version: 1.0.0.0</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameter sender: 選択ボタンのインスタンス</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; - Parameter sender: 選択ボタンのインスタンス</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; */</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func touchButton(_ sender: UIButton) {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;public func touchButton(_ sender: UIButton) {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 選択ボタン押下により呼び出し元に戻る</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;// 選択ボタン押下により呼び出し元に戻る</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if let handler = self.resultHandler {</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;if let handler = self.resultHandler {</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;handler()</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;handler()</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;self.dismiss(animated: true, completion: nil)</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp; &nbsp; &nbsp;self.dismiss(animated: true, completion: nil)</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2"> &nbsp; &nbsp;</span>&nbsp;</code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">}</span></code></td>
+<td class="ln"></td><td class="sf3b2"><code><span class="sf3b2">}</span></code></td>
+</tr>
+<tr>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+<td class="ln"></td><td class="sf3b2"><code>&nbsp;</code></td>
+</tr>
+</tbody>
+</table>
+</div></body>
+</html>

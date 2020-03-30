@@ -1,0 +1,9 @@
+☆データベースのアドレス取得について
+①LoginViewController.swiftの42行目にブレークポイントを張る。
+②右下ウィンドウに"po shareApp.dbFileName;"と入力する。
+
+☆webサーバとの通信アクセス時のステータスコード取得について
+①communicationWebServer.swiftの108行目にブレークポイントを張る。
+②右下ウィンドウに"po httpStatus.statusCode;"と入力する。
+
+(デバッグについて、詳しくはXcodeの本P.158以降を見ていただければよいかと)
